@@ -1,3 +1,8 @@
+ * {
+     box-sizing: border-box;
+ }
+
+
  html {
     font-size: 16px;
 }
@@ -11,6 +16,11 @@ body {
 a {
     color: green;
     text-decoration: none;
+}
+
+.image-container img {
+    display: inline-flexbox;
+    max-width: 100%;
 }
 
 /* Nav bar */
@@ -65,24 +75,26 @@ nav ul .navmenu {
 
 
 /* Banner Section */
-
-main .banner {
-   position: inherit;
+/*
+main {
+   position: relative;
     width: 100%;
-    height: 720px;
+    height: 50px;
 }
-
+*/
 main .bannertext {
+    position: relative;
     background-image: url(https://c.tenor.com/KBe_nw4IL2QAAAAC/matrix-code.gif);
     background-repeat: repeat;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     margin-top: 10px;
-    font-size: 50rem;
+    font-size: 25rem;
     text-align: center;
     font-weight: bold;
     text-transform: capitalize;
     -webkit-font-smoothing: antialiased;
+
 
 
 }
@@ -90,8 +102,22 @@ main .bannertext {
 
 /* Gallery Section */
 
-.galleryImage {
-    position: inherit;
-    margin-top: auto;
+section  {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    max-height: fit-content;
+    width: auto;
+    align-items: center;
+    margin-top: 10px;
     margin-bottom: auto;
+    background-color: black;
+    width: 100%;
+}
+
+.gallery img {
+    
+    width: auto;
+    height: 250px;
+
 }
