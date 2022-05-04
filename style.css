@@ -1,0 +1,96 @@
+ html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    color: green;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+/* Nav bar */
+
+nav {
+    z-index: 100;
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-content:flex-end;
+}
+
+.header {
+    display: block;
+    align-items: center;
+    padding: 1.8 rem;
+}
+
+ nav .logo{
+     flex: 1;
+     padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul .navmenu {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+
+}
+
+ .navmenu li  {
+     display: inline-block;
+     padding-left: 3rem;
+     list-style-type: none;
+     padding-right: 15px;
+     
+}
+
+.navmenu a {
+    display: inline;
+    position: relative;
+    width: 100%;
+    padding: 7px;
+    float: right; 
+    
+}
+
+
+/* Banner Section 
+
+#banner {
+   
+    width: 100%;
+    height: 720px;
+}
+*/
+main .bannertext {
+    background-image: url(https://c.tenor.com/KBe_nw4IL2QAAAAC/matrix-code.gif);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    font-size: 50rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+
+/* Gallery Section */
+
+.galleryImage {
+    margin-top: auto;
+    margin-bottom: auto;
+}
