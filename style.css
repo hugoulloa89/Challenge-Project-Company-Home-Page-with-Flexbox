@@ -64,14 +64,14 @@ nav ul .navmenu {
 }
 
 
-/* Banner Section 
+/* Banner Section */
 
-#banner {
-   
+main .banner {
+   position: inherit;
     width: 100%;
     height: 720px;
 }
-*/
+
 main .bannertext {
     background-image: url(https://c.tenor.com/KBe_nw4IL2QAAAAC/matrix-code.gif);
     background-repeat: repeat;
@@ -91,6 +91,7 @@ main .bannertext {
 /* Gallery Section */
 
 .galleryImage {
+    position: inherit;
     margin-top: auto;
     margin-bottom: auto;
 }
