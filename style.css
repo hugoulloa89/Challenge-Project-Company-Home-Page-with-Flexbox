@@ -19,7 +19,7 @@ a {
 }
 
 .image-container img {
-    display: inline-flexbox;
+    display: inline;
     max-width: 100%;
 }
 
@@ -102,22 +102,16 @@ main .bannertext {
 
 /* Gallery Section */
 
-section  {
+div.gallery img {
     position: relative;
-    display: inline-flex;
-    justify-content: space-between;
-    max-height: fit-content;
-    width: auto;
-    align-items: center;
+    display:inline-flex;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    align-items: baseline;
     margin-top: 10px;
     margin-bottom: auto;
     background-color: black;
-    width: 100%;
-}
-
-.gallery img {
     
-    width: auto;
-    height: 250px;
-
 }
+
