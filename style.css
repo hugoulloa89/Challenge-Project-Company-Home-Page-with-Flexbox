@@ -1,4 +1,6 @@
  * {
+     margin: 0;
+     padding: 0;
      box-sizing: border-box;
  }
 
@@ -18,10 +20,7 @@ a {
     text-decoration: none;
 }
 
-.image-container img {
-    display: inline;
-    max-width: 100%;
-}
+
 
 /* Nav bar */
 
@@ -98,20 +97,78 @@ main .bannertext {
 
 
 }
+/*Mission section*/
+.mission {
 
+    justify-content: center;
+}
 
 /* Gallery Section */
+.gallery {
+    margin: 0;
+    display: inline-block;
+    max-width: 300px;
+}
 
-div.gallery img {
+.image-container img {
+    
+    max-width: 100%;
+
+}
+
+
+/*
+.gallery {
+    display: grid;
+    min-height: 500px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.gallery-content {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container img {
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+    height: auto;
+}
+
+div.gallery{
     position: relative;
-    display:inline-flex;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    min-height: 500px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+
+div.image-container {
+    
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 250px;
     height: auto;
-    align-items: baseline;
+    align-items: center;
     margin-top: 10px;
     margin-bottom: auto;
     background-color: black;
     
 }
+*/
+
 
