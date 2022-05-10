@@ -1,15 +1,22 @@
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+* ,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
- html {
+html {
     font-size: 16px;
 }
 
-body , .mission , .gallery , .team-container , address , footer {
+body,
+.mission,
+.gallery,
+.team-container,
+address,
+footer {
     display: block;
 }
 
@@ -36,7 +43,7 @@ nav {
     top: 0;
     width: 100%;
     display: flex;
-    align-content:flex-end;
+    align-content: flex-end;
 }
 
 .header {
@@ -45,9 +52,9 @@ nav {
     padding: 1.8 rem;
 }
 
- nav .logo{
-     flex: 1;
-     padding-left: 15px;
+nav .logo {
+    flex: 1;
+    padding-left: 15px;
     display: flex;
     align-items: center;
 }
@@ -59,12 +66,12 @@ nav ul .navmenu {
 
 }
 
- .navmenu li  {
-     display: inline-block;
-     padding-left: 3rem;
-     list-style-type: none;
-     padding-right: 15px;
-     
+.navmenu li {
+    display: inline-block;
+    padding-left: 3rem;
+    list-style-type: none;
+    padding-right: 15px;
+
 }
 
 .navmenu a {
@@ -72,8 +79,8 @@ nav ul .navmenu {
     position: relative;
     width: 100%;
     padding: 7px;
-    float: right; 
-    
+    float: right;
+
 }
 
 
@@ -83,7 +90,7 @@ main .bannertext {
     position: relative;
     background-image: url(https://c.tenor.com/KBe_nw4IL2QAAAAC/matrix-code.gif);
     background-repeat: repeat;
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 10px;
     font-size: 25rem;
@@ -95,6 +102,7 @@ main .bannertext {
 
 
 }
+
 /*Mission section*/
 .mission {
     display: flex;
@@ -106,7 +114,7 @@ main .bannertext {
     font-style: italic;
     color: #fff;
     background-image: url(https://c.tenor.com/KBe_nw4IL2QAAAAC/matrix-code.gif);
-    
+
 }
 
 
@@ -129,22 +137,75 @@ main .bannertext {
 }
 
 .image-container img {
-    
+
     width: 300px;
     height: 200px;
 
 
 }
 
-.team-container {
+/* Team Section */
+
+.teamcontainer {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
     align-items: center;
+    justify-content: space-evenly;
+    grid-auto-flow: dense;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: darkgreen;
 
 }
 
-#teamphoto {
-    width: 200px;
+.column {
+    float: left;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+#teamphoto  {
+    width: 300px;
     height: 300px;
+    border-radius: 50%;
 }
 
+.teamcard {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 
+.teaminfo {
+        padding: 0 16px;
+        text-align: center;
+    }
+
+.teaminfo::after, .teamcontainer::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.title {
+        color: grey;
+    }
+
+.button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+.button:hover {
+        background-color: #555;
+    }
