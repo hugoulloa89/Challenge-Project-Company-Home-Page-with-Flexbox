@@ -9,6 +9,10 @@
     font-size: 16px;
 }
 
+body , .mission , .gallery , .team-container , address , footer {
+    display: block;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: black;
@@ -99,9 +103,19 @@ main .bannertext {
 }
 /*Mission section*/
 .mission {
-
+    display: flex;
+    height: 200px;
+    width: auto;
     justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-style: italic;
+    color: #fff;
+    background-image: url(https://c.tenor.com/KBe_nw4IL2QAAAAC/matrix-code.gif);
+    
 }
+
+
 
 /* Gallery Section */
 .gallery {
@@ -111,86 +125,32 @@ main .bannertext {
     grid-auto-rows: 1fr;
     grid-gap: 1em;
     grid-auto-flow: dense;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+
 
 }
 
 .image-container img {
     
-    max-width: 100%;
+    width: 300px;
+    height: 200px;
+
 
 }
 
-
-/*
-.gallery {
+.team-container {
     display: grid;
-    min-height: 500px;
-    margin: auto;
-    padding-top: 70px;
-}
-
-.gallery-content {
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-}
 
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.image-container img {
-    margin: auto;
-    width: 200px;
-    padding: 10px;
-    height: auto;
-}
-
-div.gallery{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 500px;
-    margin: auto;
-    padding-top: 70px;
-}
-
-
-div.image-container {
-    
-    
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 250px;
-    height: auto;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: auto;
-    background-color: black;
-    
-}
-*/
-
-.team {
-    padding-top: 5px;
-    display: flexbox;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.teammate {
-    padding: 10px;
-    flex-basis: 280px;
 }
 
 #teamphoto {
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    height: auto;
+    width: 200px;
+    height: 300px;
 }
+
+
