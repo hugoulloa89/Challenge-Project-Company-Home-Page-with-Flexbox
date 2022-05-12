@@ -154,7 +154,7 @@ main .bannertext {
 /* Adress section */ 
 
 address {
-    background-image: url('resources/istockphoto-1250407250-612x612.jpeg');
+    background-image: url('resources/nasa-_SFJhRPzJHs-unsplash.jpg');
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -182,8 +182,11 @@ address {
 /* Footer Section */
 
 footer {
+    padding-top: 20px;
     width: auto;
     height: 90px;
     text-align: center;
+    align-items: center;
+    align-self: center;
 
 }
